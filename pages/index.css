@@ -7,7 +7,6 @@
     color: #252525;
     max-width: 1440px;
     min-width: 320px;
-    /* overflow: hidden; */
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -195,7 +194,6 @@
 .search__form-input-place {
     border-radius: 100px 0 0 100px;
     background-image: url(../images/search-form-place.svg);
-    /* border: 1px solid red; */
 }
 
 .search__form-input-calendar {
@@ -358,7 +356,6 @@
     border-radius: 10px;
     border: 1px solid #e6e6e6;
     padding: 14px 79.25px 15px 22.75px;
-    /* background-image: url(../images/arrow-down-icon.svg); */
     background-repeat: no-repeat;
     background-position: 212px;
     margin-right: 25px;
@@ -378,8 +375,6 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(333.68px, 1fr));
-    /* grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr); */
     grid-column-gap: 35px;
     grid-row-gap: 30px;
 }
@@ -389,7 +384,6 @@
     flex-direction: column;
 }
 .tours__cards-like {
-    /* border: 14px solid rgba(255, 255, 255, 0.1); */
     border: 0;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -405,8 +399,6 @@
     content: '';
     position: absolute;
     background-image: url(/images/tours-like.svg);
-    /* background-repeat: no-repeat; */
-
     width: 22px;
     height: 22px;
 
@@ -424,10 +416,9 @@
     padding: 21px 26px 19px;
 }
 .tours__cards-item-title {
-    /* color: #252525; */
     font-size: 14px;
     font-weight: 700;
-    line-height: 23px; /* 164.286% */
+    line-height: 23px;
     width: 294px;
     margin: 0;
 }
@@ -437,7 +428,7 @@
     color: #6a6a6a;
     font-size: 12px;
     font-weight: 400;
-    line-height: 20px; /* 166.667% */
+    line-height: 20px;
     margin: 10px 0 16px;
 }
 .tours__cards-item-text::after {
@@ -467,7 +458,6 @@
     line-height: 26px;
 }
 .tours__cards-item-actions-date {
-    /* width: 154px; */
     appearance: none;
     font-size: 12px;
     font-weight: 400;
@@ -502,7 +492,6 @@
     border: 0;
     border-radius: 100px;
     margin: 69px 0 104.41px;
-    /* padding: 50px 10px; */
     align-self: center;
     color: #000;
     font-size: 15px;
@@ -514,8 +503,6 @@
 
 /*feedback*/
 .feedback {
-    /* width: 100vh;  */
-    /* padding: 0 auto;  */
     position: relative;
     display: flex;
     flex-direction: row;
@@ -523,20 +510,6 @@
     padding: 70px 91px 80px 100px;
     background-color: #fff;
 }
-/* .feedback::before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    width: 150vw;
-    height: 100vh;
-    top: -380px;
-    left: -50vw;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.7167659300048144) 0%,
-        rgba(217, 217, 217, 0.4) 100%
-    );
-} */
 .feedback::before {
     content: '';
     z-index: -1;
@@ -551,10 +524,6 @@
         rgba(217, 217, 217, 0.4) 100%
     );
 }
-/* width: 100vw;
-    height: 100vh;
-    top: 3070px;
-    left: 0; */
 .feedback__aside {
     display: flex;
     flex-direction: column;
@@ -707,10 +676,21 @@
 }
 /*BLOG*/
 .blog {
+    position: relative;
     background-color: #f5f5f5;
     margin-top: 109px;
     padding-top: 95.46px;
     padding-bottom: 106.64px;
+}
+.blog::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -140px;
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100%;
 }
 .blog__header {
     display: flex;
@@ -749,7 +729,6 @@
     display: flex;
     flex-direction: column;
     max-width: 323.73px;
-    /* margin-right: 45.47px; */
 }
 .blog__cards-item-picture {
     width: 100%;
@@ -786,7 +765,6 @@
     border: 1px solid #e2e2e2;
     background-color: #f5f5f5;
     border-radius: 20px;
-    /* padding: 7.94px 11.22px 9.02px 23px; */
     padding: 7.94px 35.22px 9.02px 18px;
     margin-top: 18.29px;
     font-size: 14px;
@@ -950,7 +928,6 @@
     max-width: 300px;
 }
 .footer__apps-linkimg {
-    /* width: 101.9px; */
     height: 34px;
     margin-right: 9px;
 }
@@ -963,14 +940,13 @@
 .footer__links-link {
     font-size: 14px;
     font-weight: 400;
-    line-height: 35px; /* 250% */
+    line-height: 35px;
 }
 .footer__links-link-phone,
 .footer__links-link-mail,
 .footer__links-link-geo {
     position: relative;
     padding-left: 15px;
-    /* line-height: 25px; */
 }
 .footer__links-link-phone::before {
     content: '';
